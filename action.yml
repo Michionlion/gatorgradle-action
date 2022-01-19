@@ -1,0 +1,7 @@
+name: 'GatorGradle'
+description: 'Execute GatorGradle'
+runs:
+  using: 'composite'
+  steps:
+    - run: ${{ github.action_path }}/execute.sh
+      shell: bash
